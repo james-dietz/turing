@@ -99,9 +99,6 @@ class FSM:
         tape.display()
         
 
-    
-
-
 def fsm_from_json(f, enc):
     F = FSM()
     for state_name, transitions in json.load(open(f, "r", encoding=enc)).items():
